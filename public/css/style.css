@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+h3{
+    font-size: 24px;
+    margin: 20px 0px;
+}
+p{
+    font-size: 12px;
+}
+
+
+/* #### HEADER #### */
+header{
+    background-color: #EAC926;
+    width: 100%;
+}
+header .top-header .h-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+header .top-header .topHeaderText{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+header .top-header .logo img{
+    width: 95%;
+}
+
+/* -------- */
+header .search-bar{
+    width: 95%;
+    display: flex;
+    margin: auto;
+}
+header .barra{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+header .search-term{
+    width: 100%;
+    border: solid 1px #666;
+    border-radius: 2px;
+    color:  black;
+    border-right: none;
+    padding: 10px;;
+}
+header .search-button{
+    color: black;
+    background-color: white;
+    border: solid 1px #666;
+    padding: 10px;
+}
+
+/* -------- */
+header nav ul li{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    padding: 6px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+header .navbar .nav-izquierda, .nav-derecha{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+header .burger-menu{
+    text-align: center;
+}
+header .burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    font-size: 20px;
+}
+header .navbar{
+    display: none;
+    width: 100%;
+}
+section.banner img{
+    width: 100%;
+}
+
+/* ####### MAIN ####### */
+main{
+    width: 90%;
+    margin: auto;
+    background-color: #ebebeb;
+}
+.last.vist,
+.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+.price {
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+.discount {
+    flex-grow: 0.7;
+    color: #39b54a;
+}
+.discount,
+.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+h4 .description{
+    font-size: 16px;
+    color: #666;
+}
+.description {
+    display: none;
+    margin-top: 20px;
+}
+main section article{
+    background-color: #fff;
+    margin: 10px 0px;
+}
+main section article img {
+    width: 100%;
+}
+main section article .main-article{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px #ebebeb;
+    background-color: #FFF;
+    padding: 15px;
+    position: relative;    
+}
+main section article .main-article i{
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+/* ####### FOOTER ####### */
+footer section{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;    
+}
+footer section i{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+footer section .pie, .copy{
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+/* ##### TABLETS ##### */
+@media(min-width: 415px){
+    header .burger-menu{
+        display: none;
+    }
+    header .navbar{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main section article .description{
+        display: block;
+        text-align: center;
+        
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section .products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    main section .products article {
+        width: 47%;
+    }
+    footer section{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+
+/* ##### DESKTOP ##### */
+@media(min-width: 769px){
+    main section .products article{
+        width: 22%;
+    }
+    header nav ul li a{
+        font-size: 12px;
+    }
+    main section article .description{
+        display: none;
+    }
+    main section article:hover .description{
+        display: block;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    main section article{
+        box-shadow:none;
+    }
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    footer section .pie:hover i{
+        color:rgb(36, 172, 196)
+    }
+    main.login input.submit,
+main.register input.submit {
+        padding: 10px;
+        color: lightgrey;
+        background-color: white;
+        border-radius:10px;
+
+    }
+
+    main.login input.submit:hover,
+    main.register input.submit:hover {
+        background-color: #0022AA;
+    }
+    main .login .btn:hover{
+        background-color: #0022AA;
+    } 
+    
+
+
+
+}
+
+
