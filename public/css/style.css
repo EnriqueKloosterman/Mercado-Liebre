@@ -179,6 +179,75 @@ footer section .pie, .copy{
     color: #666;
 }
 
+
+/*    ########## PANTALLA LOGIN ########## */
+
+
+main.login{
+    background-color: rgba(255, 213, 0, 0.3);
+    
+    border-radius: 5px;
+    align-items: flex-start;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+main.login input{
+    margin-top: 20px;
+    border-radius: 4px;
+    border: solid 1px lightgray;
+
+}
+
+main.login input.submit,
+main.register input.submit {
+    padding: 5px;
+    color: black;
+    background-color: rgb(93, 123, 241);
+    border-radius:10px;
+}
+
+
+/*        ########### PANTALLA REGISTER ########## */
+
+main.register{
+    background-color: rgba(255, 213, 0, 0.3);    
+    border-radius: 5px;
+    align-items: flex-start;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+input .reset{
+    padding: 5px;
+    color: black;
+    background-color: rgb(93, 123, 241);
+    border-radius:10px;
+}
+
+main.login input.submit:hover,
+main.register input.submit:hover {
+    background-color: #0022AA;
+    color: whitesmoke;
+}
+
+
+
+
+
+
+
 /* ##### TABLETS ##### */
 @media(min-width: 415px){
     header .burger-menu{
@@ -226,7 +295,12 @@ footer section .pie, .copy{
     hedaer .top-header{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
+    header .search-bar{
+        width:50%;
+    }
+    
     header nav ul li a{
         font-size: 12px;
     }
@@ -248,26 +322,13 @@ footer section .pie, .copy{
     footer section .pie:hover i{
         color:rgb(36, 172, 196)
     }
-    main.login input.submit,
-main.register input.submit {
-        padding: 10px;
-        color: lightgrey;
-        background-color: white;
-        border-radius:10px;
-
+    main.login, main.register{
+        width: 50%;
+        
     }
-
-    main.login input.submit:hover,
-    main.register input.submit:hover {
-        background-color: #0022AA;
-    }
-    main .login .btn:hover{
-        background-color: #0022AA;
-    } 
-    
-
-
 
 }
+
+
 
 
